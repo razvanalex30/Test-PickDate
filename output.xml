@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.2 on win32)" generated="20210401 17:03:16.798" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.2 on win32)" generated="20210401 18:10:58.577" rpa="false">
 <suite id="s1" name="TestDatePick" source="C:\Users\RAlexandru\Documents\Proiecte Eclipse\TestDatePick">
 <suite id="s1-s1" name="Test Date Pick" source="C:\Users\RAlexandru\Documents\Proiecte Eclipse\TestDatePick\test_date_pick.robot">
 <test id="s1-s1-t1" name="TestSelectDate">
@@ -10,8 +10,8 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20210401 17:03:17.007" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/date-picker'.</msg>
-<status status="PASS" starttime="20210401 17:03:17.007" endtime="20210401 17:03:19.910"></status>
+<msg timestamp="20210401 18:10:58.788" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/date-picker'.</msg>
+<status status="PASS" starttime="20210401 18:10:58.787" endtime="20210401 18:11:01.572"></status>
 </kw>
 <kw name="Set Window Position" library="SeleniumLibrary">
 <doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
@@ -19,138 +19,48 @@
 <arg>${2000}</arg>
 <arg>${0}</arg>
 </arguments>
-<status status="PASS" starttime="20210401 17:03:19.910" endtime="20210401 17:03:20.042"></status>
+<status status="PASS" starttime="20210401 18:11:01.572" endtime="20210401 18:11:01.703"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210401 17:03:20.042" endtime="20210401 17:03:20.153"></status>
+<status status="PASS" starttime="20210401 18:11:01.703" endtime="20210401 18:11:01.826"></status>
 </kw>
-<status status="PASS" starttime="20210401 17:03:17.006" endtime="20210401 17:03:20.153"></status>
+<status status="PASS" starttime="20210401 18:10:58.787" endtime="20210401 18:11:01.827"></status>
 </kw>
 <kw name="Select Date" library="date_picker.DatePicker">
 <arguments>
 <arg>${date_dict}</arg>
 </arguments>
-<status status="PASS" starttime="20210401 17:03:20.153" endtime="20210401 17:03:20.502"></status>
+<status status="PASS" starttime="20210401 18:11:01.827" endtime="20210401 18:11:02.146"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3</arg>
 </arguments>
-<msg timestamp="20210401 17:03:23.513" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210401 17:03:20.503" endtime="20210401 17:03:23.513"></status>
+<msg timestamp="20210401 18:11:05.162" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210401 18:11:02.146" endtime="20210401 18:11:05.162"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210401 17:03:23.513" endtime="20210401 17:03:25.666"></status>
+<status status="PASS" starttime="20210401 18:11:05.162" endtime="20210401 18:11:07.302"></status>
 </kw>
-<status status="PASS" starttime="20210401 17:03:17.006" endtime="20210401 17:03:25.666" critical="yes"></status>
+<status status="PASS" starttime="20210401 18:10:58.786" endtime="20210401 18:11:07.302" critical="yes"></status>
 </test>
-<test id="s1-s1-t2" name="TestInsertDateAsString">
-<kw name="Open Browser Page">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-</arguments>
-<msg timestamp="20210401 17:03:25.668" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/date-picker'.</msg>
-<status status="PASS" starttime="20210401 17:03:25.668" endtime="20210401 17:03:28.445"></status>
-</kw>
-<kw name="Set Window Position" library="SeleniumLibrary">
-<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
-<arguments>
-<arg>${2000}</arg>
-<arg>${0}</arg>
-</arguments>
-<status status="PASS" starttime="20210401 17:03:28.446" endtime="20210401 17:03:28.577"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210401 17:03:28.577" endtime="20210401 17:03:28.688"></status>
-</kw>
-<status status="PASS" starttime="20210401 17:03:25.667" endtime="20210401 17:03:28.688"></status>
-</kw>
-<kw name="Input Date" library="date_picker.DatePicker">
-<arguments>
-<arg>${date_dict}</arg>
-</arguments>
-<status status="PASS" starttime="20210401 17:03:28.689" endtime="20210401 17:03:29.007"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>3</arg>
-</arguments>
-<msg timestamp="20210401 17:03:32.010" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210401 17:03:29.007" endtime="20210401 17:03:32.010"></status>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210401 17:03:32.011" endtime="20210401 17:03:34.139"></status>
-</kw>
-<status status="PASS" starttime="20210401 17:03:25.667" endtime="20210401 17:03:34.140" critical="yes"></status>
-</test>
-<test id="s1-s1-t3" name="TestInsertDateAndTimeAsString">
-<kw name="Open Browser Page">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-</arguments>
-<msg timestamp="20210401 17:03:34.149" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/date-picker'.</msg>
-<status status="PASS" starttime="20210401 17:03:34.147" endtime="20210401 17:03:36.851"></status>
-</kw>
-<kw name="Set Window Position" library="SeleniumLibrary">
-<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
-<arguments>
-<arg>${2000}</arg>
-<arg>${0}</arg>
-</arguments>
-<status status="PASS" starttime="20210401 17:03:36.852" endtime="20210401 17:03:36.986"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210401 17:03:36.986" endtime="20210401 17:03:37.110"></status>
-</kw>
-<status status="PASS" starttime="20210401 17:03:34.145" endtime="20210401 17:03:37.110"></status>
-</kw>
-<kw name="Input Date Time" library="date_picker.DatePicker">
-<arguments>
-<arg>${date_time_dict}</arg>
-</arguments>
-<status status="PASS" starttime="20210401 17:03:37.110" endtime="20210401 17:03:37.432"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>5</arg>
-</arguments>
-<msg timestamp="20210401 17:03:42.436" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210401 17:03:37.432" endtime="20210401 17:03:42.436"></status>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210401 17:03:42.436" endtime="20210401 17:03:44.562"></status>
-</kw>
-<status status="PASS" starttime="20210401 17:03:34.142" endtime="20210401 17:03:44.564" critical="yes"></status>
-</test>
-<status status="PASS" starttime="20210401 17:03:16.844" endtime="20210401 17:03:44.566"></status>
+<status status="PASS" starttime="20210401 18:10:58.625" endtime="20210401 18:11:07.303"></status>
 </suite>
-<status status="PASS" starttime="20210401 17:03:16.825" endtime="20210401 17:03:44.569"></status>
+<status status="PASS" starttime="20210401 18:10:58.605" endtime="20210401 18:11:07.305"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0">Critical Tests</stat>
-<stat pass="3" fail="0">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" id="s1" name="TestDatePick">TestDatePick</stat>
-<stat pass="3" fail="0" id="s1-s1" name="Test Date Pick">TestDatePick.Test Date Pick</stat>
+<stat pass="1" fail="0" id="s1" name="TestDatePick">TestDatePick</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Test Date Pick">TestDatePick.Test Date Pick</stat>
 </suite>
 </statistics>
 <errors>

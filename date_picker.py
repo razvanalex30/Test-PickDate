@@ -34,20 +34,15 @@ class DatePicker:
         self.driver = SeleniumLibraryExt.create_driver()
         date_dict = dict()
         self.driver.find_element_by_xpath("//input[@id='datePickerMonthYearInput']").click()
-        for key in date_selected:
-            if key == "Month":
-                self.driver.find_element_by_xpath("//select[@class='react-datepicker__month-select']").click()
-                date_dict[
-                    key] = f"//select[@class='react-datepicker__month-select']//option[text()='{date_selected[key]}']"
-                self.driver.find_element_by_xpath(date_dict[key]).click()
-            elif key == "Year":
-                self.driver.find_element_by_xpath("//select[@class='react-datepicker__year-select']").click()
-                date_dict[
-                    key] = f"//select[@class='react-datepicker__year-select']//option[text()='{date_selected[key]}']"
-                self.driver.find_element_by_xpath(date_dict[key]).click()
-            elif key == "Day":
-                date_dict[key] = f"//div[text()='{date_selected[key]}'][not(contains(@class,'--outside-month'))]"
-                self.driver.find_element_by_xpath(date_dict[key]).click()
+        self.driver.find_element_by_xpath("//select[@class='react-datepicker__month-select']").click()
+        date_dict[
+            'Month'] = f"//select[@class='react-datepicker__month-select']//option[text()='{date_selected['Month']}']"
+        self.driver.find_element_by_xpath("//select[@class='react-datepicker__year-select']").click()
+        date_dict[
+            'Year'] = f"//select[@class='react-datepicker__year-select']//option[text()='{date_selected['Year']}']"
+        date_dict['Day'] = f"//div[text()='{date_selected['Day']}'][not(contains(@class,'--outside-month'))]"
+        for key in date_dict:
+            self.driver.find_element_by_xpath(date_dict[key]).click()
 
     def input_date(self, date_selected):
         self.driver = SeleniumLibraryExt.create_driver()

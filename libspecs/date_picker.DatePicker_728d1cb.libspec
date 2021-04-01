@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<keywordspec name="date_picker.DatePicker" type="LIBRARY" format="ROBOT" scope="TEST" namedargs="true" generated="2021-04-01T13:58:12Z" specversion="2" source="C:\Users\RAlexandru\Documents\Proiecte Eclipse\TestDatePick\date_picker.py" lineno="9">
+<keywordspec name="date_picker.DatePicker" type="LIBRARY" format="ROBOT" scope="TEST" namedargs="true" generated="2021-04-01T15:10:49Z" specversion="2" source="C:\Users\RAlexandru\Documents\Proiecte Eclipse\TestDatePick\date_picker.py" lineno="9">
 <version />
 <scope>test case</scope>
 <namedargs>yes</namedargs>
@@ -10,13 +10,13 @@
 </arguments>
 <doc />
 </kw>
-<kw name="Input Date" lineno="52">
+<kw name="Input Date" lineno="47">
 <arguments>
 <arg>date_selected</arg>
 </arguments>
 <doc />
 </kw>
-<kw name="Input Date Time" lineno="58">
+<kw name="Input Date Time" lineno="53">
 <arguments>
 <arg>date_time_selected</arg>
 </arguments>
